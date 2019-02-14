@@ -1,6 +1,6 @@
 security:
     encoders:
-        App\Entity\User: plaintext
+        App\Entity\User: bcrypt
             # algorithm: argon2i
             # cost: 12
 
