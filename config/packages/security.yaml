@@ -21,6 +21,9 @@ security:
                 provider: app_user_provider
                 login_path: login
                 check_path: login
+            logout:
+                path: /logout
+                target: /
 
             # activate different ways to authenticate
 
