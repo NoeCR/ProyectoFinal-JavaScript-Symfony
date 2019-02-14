@@ -86,6 +86,9 @@ ul, ol {
   list-style: none
 }
 
+#t-login{
+ text-align: center;
+}
 /*----------------------------*\
 	Buttons
 \*----------------------------*/
