@@ -8,7 +8,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
  */
-class User implements UserInterface
+class User implements UserInterface, \Serializable
 {
     /**
      * @ORM\Id()
@@ -109,5 +109,22 @@ class User implements UserInterface
     {
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
+    }
+
+    public function serialize()
+    {
+        return serialize(array(
+            $this->id,
+            $this->email,
+            $this->password
+        ));
+    }
+    public function unserialize($datos_serializados)
+    {
+        list(
+            $this->id,
+            $this->email,
+            $this->password
+        ) = unserialize($datos_serializados, array('allowed_classes' => false));
     }
 }
