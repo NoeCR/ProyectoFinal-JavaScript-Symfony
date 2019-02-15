@@ -45,4 +45,18 @@ class RegistrationController extends AbstractController
             'registrationForm' => $form->createView(),
         ]);
     }
+
+    public function emailTest(Request $request){
+        $email = $request->get("email");
+        $em = $this->getDoctrine()->getManager();
+        $user_repo = $em->getRepository(User::class);
+        $user_isset = $user_repo->findOneBy(array("email" => $email));
+        $result = "used";
+        if(count($user_isset) >= 1 && is_object($user_isset)){
+            $result = "used";
+        }else{
+            $result = "unused";
+        }
+        return new Response($result);
+    }
 }
