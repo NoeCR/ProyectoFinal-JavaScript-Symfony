@@ -7,10 +7,7 @@
 		$('#responsive-nav').toggleClass('active');
 	})
 
-	// Fix cart dropdown from closing
-	$('.cart-dropdown').on('click', function (e) {
-		e.stopPropagation();
-	});
+
 
 	/////////////////////////////////////////
 
@@ -62,7 +59,7 @@
 	});
 
 	/////////////////////////////////////////
-	
+
 	// Product Main img Slick
 	$('#product-main-img').slick({
     infinite: true,

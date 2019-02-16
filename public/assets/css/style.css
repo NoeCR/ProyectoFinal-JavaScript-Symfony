@@ -107,6 +107,14 @@ ul, ol {
   transition: 0.2s all;
 }
 
+/*----------------------------*\
+	img productos
+\*----------------------------*/
+img.producto-imagen {
+  max-width: 25%;
+  height: auto;
+}
+
 .primary-btn:hover, .primary-btn:focus {
   opacity: 0.9;
   color: #FFF;
