@@ -35,10 +35,9 @@
 													<h4 class="product-price">{{product.precio}}€</h4>
 													<p>DESCRIPCIÓN Lore ipsum</p>
 													<div class="product-img">
-														<img class="producto-imagen" src="{{ asset ("assets/img/") }}{{product.imagen}}" alt="">
+														<a href="{{ asset ("assets/img/") }}{{product.imagen}}" data-lightbox="{{ asset ("assets/img/") }}{{product.imagen}}"><img class="example-image" src="{{ asset ("assets/img/") }}{{product.imagen}}" alt=""></a>
 													</div>
 												<button class="btn btn-danger my-cart-btn" data-id="{{product.id}}" data-name="{{product.nombre}}" data-summary="summary 1" data-price="{{product.precio}}" data-quantity="1" data-image="{{product.imagen}}">Add to Cart</button>											
-												
 											</div>
 											</div>
 											</div>

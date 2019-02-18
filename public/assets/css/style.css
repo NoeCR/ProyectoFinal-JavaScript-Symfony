@@ -881,7 +881,7 @@ textarea.input {
   position: relative;
 }
 
-.product .product-img>img {
+.product .product-img>a>img {
   width: 100%;
 }
 
