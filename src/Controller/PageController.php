@@ -20,6 +20,7 @@ class PageController extends AbstractController
     ["id" => 11 , "nombre" => "producto11" , "precio" =>185, 'imagen' => 'product11.jpg'],
     ["id" => 12 , "nombre" => "producto12" , "precio" =>115, 'imagen' => 'product12.png']];
     
+
     /**
      * @Route("/", name="index")
      */
