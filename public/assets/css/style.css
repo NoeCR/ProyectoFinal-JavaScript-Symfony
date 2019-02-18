@@ -111,8 +111,8 @@ ul, ol {
 	img productos
 \*----------------------------*/
 img.producto-imagen {
-  max-width: 25%;
-  height: auto;
+  
+  
 }
 
 .primary-btn:hover, .primary-btn:focus {
@@ -2173,6 +2173,10 @@ textarea.input {
   #reviews {
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+
+  .product{
+    display: block;
   }
 }
 
