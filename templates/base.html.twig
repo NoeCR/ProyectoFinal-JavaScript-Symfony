@@ -236,6 +236,9 @@
 
         <!-- jQuery Plugins -->
 		{% block javascripts %}
+			<script type="text/javascript">
+                    var URL = "{{ app.request.getSchemeAndHttpHost() }}/ProyectoFinal-JavaScript-Symfony/public/index.php";
+            </script>
 			<script src="{{ asset ('assets/js/jquery.min.js') }}"></script>
 			<script src="{{ asset ('assets/js/jquery-2.2.3.min.js') }}"></script>
 			<script src="{{ asset ('assets/js/jquery.mycart.js') }}"></script>

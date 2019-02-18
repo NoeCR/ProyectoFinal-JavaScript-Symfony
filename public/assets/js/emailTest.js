@@ -1,17 +1,17 @@
 // Email Test //
 $(document).ready(function(){
-    $(".nick-input").blur(function(){
+    $(".email-input").blur(function(){
         var nick = this.value;
 
         $.ajax({
-            url: URL+'/nick-test',
-            data: {nick: nick},
+            url: URL+'/emailTest',
+            data: {email: email},
             type: 'POST',
             success: function(response){
                 if(response == "used"){
-                    $(".nick-input").css("border", "1px solid red");
+                    $(".email-input").css("border", "1px solid red");
                 }else{
-                    $(".nick-input").css("border", "1px solid green");
+                    $(".email-input").css("border", "1px solid green");
                 }
             }
         });

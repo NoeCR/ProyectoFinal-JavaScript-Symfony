@@ -46,6 +46,9 @@ class RegistrationController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/emailTest", name="email-test")
+     */
     public function emailTest(Request $request){
         $email = $request->get("email");
         $em = $this->getDoctrine()->getManager();
