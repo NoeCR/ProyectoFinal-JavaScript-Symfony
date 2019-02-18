@@ -15,10 +15,10 @@
 			<link href="{{ asset ('assets/css/slick-theme.css') }}" type="text/css" rel="stylesheet" />
 			<link href="{{ asset ('assets/css/nouislider.min.css') }}" type="text/css" rel="stylesheet" />
 			<link href="{{ asset ('assets/css/font-awesome.min.css') }}" type="text/css" rel="stylesheet" />
-			<link href="{{ asset ('https://use.fontawesome.com/releases/v5.7.1/css/all.css') }}" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+			<link href="{{ asset ('https://use.fontawesome.com/releases/v5.7.1/css/all.css') }}" rel="stylesheet" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
 			<link href="{{ asset ('assets/css/style.css') }}" type="text/css" rel="stylesheet" />
 			<link href="{{ asset ('assets/fonts/css/all.css') }}" type="text/css" rel="stylesheet">
-			<link href="{{ asset ('assets/plugins/src/js/lightbox.css') }}" type="text/css" rel="stylesheet">
+			<link href="{{ asset ('assets/plugins/lightbox.css') }}" type="text/css" rel="stylesheet">
 		{% endblock %}
 	</head>
     <body>
@@ -76,6 +76,9 @@
 									</a>
 								</div>
 								{% else %}
+								<div>
+									<span style="color:white" > {{ app.user.username }} </span>
+								</div>
 								<div>
 									<a href="{{path("logout")}}">
 											<i class="fas fa-sign-out-alt"></i>
@@ -242,7 +245,7 @@
 			<script src="{{ asset ('assets/js/main.js') }}"></script>
 			<script src="{{ asset ('assets/js/bootstrap.min.js') }}"></script>
 			<script defer src="{{ asset ('assets/fonts/js/all.js') }}"></script>
-			<script defer src="{{ asset ('assets/plugins/src/js/lightbox.js') }}"></script>
+			<script defer src="{{ asset ('assets/plugins/lightbox.js') }}"></script>
 		{% endblock %}
     </body>
 </html>

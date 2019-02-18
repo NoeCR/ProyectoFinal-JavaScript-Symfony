@@ -17,8 +17,9 @@ class PageController extends AbstractController
     ["id" => 8 , "nombre" => "producto8" , "precio" =>225, 'imagen' => 'product08.png'],
     ["id" => 9 , "nombre" => "producto9" , "precio" =>502, 'imagen' => 'product09.png'],
     ["id" => 10 , "nombre" => "producto10" , "precio" =>152, 'imagen' => 'product10.jpg'],
-    ["id" => 11 , "nombre" => "producto11" , "precio" =>185, 'imagen' => 'product11.jpeg'],
-    ["id" => 12 , "nombre" => "producto12" , "precio" =>115, 'imagen' => 'product12.jpeg']];
+    ["id" => 11 , "nombre" => "producto11" , "precio" =>185, 'imagen' => 'product11.jpg'],
+    ["id" => 12 , "nombre" => "producto12" , "precio" =>115, 'imagen' => 'product12.png']];
+    
     /**
      * @Route("/", name="index")
      */
