@@ -14,7 +14,7 @@ $(function () {
       var position = $cartIcon.position();
       $image.animate({
         top: position.top,
-        left: position.left
+        right: position.left
       }, 500 , "linear", function() {
         $image.remove();
       });
