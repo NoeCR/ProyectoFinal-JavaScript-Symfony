@@ -1,7 +1,6 @@
-// Email Test //
 $(document).ready(function(){
     $(".email-input").blur(function(){
-        var nick = this.value;
+        var email = this.value;
 
         $.ajax({
             url: URL+'/emailTest',

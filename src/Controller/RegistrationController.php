@@ -18,6 +18,10 @@ class RegistrationController extends AbstractController
      */
     public function register(Request $request, UserPasswordEncoderInterface $passwordEncoder): Response
     {
+        if(is_object($this->getUser())){
+            return $this->redirect('index');
+        }
+
         $user = new User();
         $form = $this->createForm(RegistrationFormType::class, $user);
         $form->handleRequest($request);
@@ -47,7 +51,7 @@ class RegistrationController extends AbstractController
     }
 
     /**
-     * @Route("/emailTest", name="email-test")
+     * @Route("/emailTest", name="email-test", methods={"POST"})
      */
     public function emailTest(Request $request){
         $email = $request->get("email");
