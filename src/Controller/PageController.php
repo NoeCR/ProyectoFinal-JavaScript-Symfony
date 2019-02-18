@@ -19,6 +19,10 @@ class PageController extends AbstractController
     ["id" => 10 , "nombre" => "producto10" , "precio" =>152, 'imagen' => 'product10.jpg'],
     ["id" => 11 , "nombre" => "producto11" , "precio" =>185, 'imagen' => 'product11.jpeg'],
     ["id" => 12 , "nombre" => "producto12" , "precio" =>115, 'imagen' => 'product12.jpeg']];
+    
+    //imagenes para el carrousel
+    private $novedades = [[]];
+
     /**
      * @Route("/", name="index")
      */
