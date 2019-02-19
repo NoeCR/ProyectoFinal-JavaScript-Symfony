@@ -59,7 +59,7 @@ class RegistrationController extends AbstractController
         $user_repo = $em->getRepository(User::class);
         $user_isset = $user_repo->findOneBy(array("email" => $email));
         $result = "used";
-        if(count($user_isset) >= 1 && is_object($user_isset)){
+        if(isset($user_isset) >= 1 && is_object($user_isset)){
             $result = "used";
         }else{
             $result = "unused";
