@@ -263,6 +263,20 @@
 					arrows: true,     // show navigation arrows
 					buttons: true     // show play/stop buttons
 				});
+				$(document).ready(function() {
+				$('#key').on('keyup', function() {
+					var key = $(this).val();
+					var path = "/search/product/" + key;
+
+				$.ajax({
+						type: "GET",
+						url: path,
+						success: function(data) {
+							$("#tab1").html(data);							
+						}
+					});
+				});
+			});
     		</script>
     </body>
 </html>
